@@ -1,3 +1,7 @@
 [submodule "service.stay.alive"]
 	path = service.stay.alive
 	url = C:/Users/pk/PycharmProjects/vonsagar_kodi/service.stay.alive/
+[submodule "plugin.video.fullmatchtv"]
+	path = plugin.video.fullmatchtv
+	url = C:/Users/pk/PycharmProjects/vonsagar_kodi/plugin.video.fullmatchtv
+	branch = master
