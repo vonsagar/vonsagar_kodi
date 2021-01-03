@@ -5,3 +5,15 @@
 	path = plugin.video.fullmatchtv
 	url = C:/Users/pk/PycharmProjects/vonsagar_kodi/plugin.video.fullmatchtv
 	branch = master
+[submodule "plugin.video.seren"]
+	path = plugin.video.seren
+	url = C:/Users/pk/PycharmProjects/vonsagar_kodi/plugin.video.seren
+	branch = master
+[submodule "service.autosubs"]
+	path = service.autosubs
+	url = C:/Users/pk/PycharmProjects/vonsagar_kodi/service.autosubs
+	branch = Frodo
+[submodule "xbmc"]
+	path = xbmc
+	url = C:/Users/pk/PycharmProjects/vonsagar_kodi/xbmc
+	branch = master
