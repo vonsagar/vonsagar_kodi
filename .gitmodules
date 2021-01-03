@@ -17,3 +17,7 @@
 	path = xbmc
 	url = C:/Users/pk/PycharmProjects/vonsagar_kodi/xbmc
 	branch = master
+[submodule "service.subloader"]
+	path = service.subloader
+	url = C:/Users/pk/PycharmProjects/vonsagar_kodi/service.subloader
+	branch = master
