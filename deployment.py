@@ -3,7 +3,8 @@ import paramiko
 
 __DIRS_TO_DEPLOY_LIST__ = [{"name": "plugin.video.seren",          "dest": os.path.join(".kodi", "addons")},
                            {"name": "plugin.video.fullmatchtv",    "dest": os.path.join(".kodi", "addons")},
-                           {"name": "service.autosubs",            "dest": os.path.join(".kodi", "addons")}
+                           {"name": "service.autosubs",            "dest": os.path.join(".kodi", "addons")},
+                           {"name": "service.subloader",           "dest": os.path.join(".kodi", "addons")}
                            ]
 
 __REMOTE_HOSTS_LIST__ = ["192.168.1.108",

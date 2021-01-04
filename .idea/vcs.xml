@@ -6,6 +6,7 @@
     <mapping directory="$PROJECT_DIR$/plugin.video.seren" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/service.autosubs" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/service.stay.alive" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/service.subloader" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/xbmc" vcs="Git" />
   </component>
 </project>
