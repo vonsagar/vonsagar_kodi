@@ -26,6 +26,7 @@ class Deployment:
         copy_command = "scp -r " + dir_to_deploy["value"]["name"] + " root@" + remote_host["address"] + ":" + \
                        dir_to_deploy["value"]["dest"].replace("\\", "/")
         os.system(copy_command)
+        print(dir_to_deploy["value"]["name"] + " -> " + remote_host["id"])
 
     def deploy(self, remote_hosts_list, dirs_to_deploy_list):
         for remote_host in remote_hosts_list:
