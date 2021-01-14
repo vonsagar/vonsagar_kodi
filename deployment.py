@@ -1,27 +1,42 @@
 import os
 import paramiko
+from remote_hosts_list import __REMOTE_HOSTS_LIST__
+from dirs_to_deploy_list import __DIRS_TO_DEPLOY_LIST__
 
-__DIRS_TO_DEPLOY_LIST__ = [{"name": "plugin.video.seren",          "dest": os.path.join(".kodi", "addons")},
-                           {"name": "plugin.video.fullmatchtv",    "dest": os.path.join(".kodi", "addons")},
-                           {"name": "service.autosubs",            "dest": os.path.join(".kodi", "addons")},
-                           {"name": "service.subloader",           "dest": os.path.join(".kodi", "addons")}
-                           ]
 
-__REMOTE_HOSTS_LIST__ = ["192.168.1.108",
-                         "192.168.1.107"
-                         ]
+class Deployment:
+    client = None
 
-for remote_host in __REMOTE_HOSTS_LIST__:
-    client = paramiko.SSHClient()
-    client.load_system_host_keys()
-    client.set_missing_host_key_policy(paramiko.client.AutoAddPolicy)
-    client.connect(remote_host, 22, 'root', 'coreelec')
-    
-    for dir_to_deploy in __DIRS_TO_DEPLOY_LIST__:
-        destination_dir_full_path = os.path.join(dir_to_deploy["dest"], dir_to_deploy["name"])
-        client.exec_command('rm -rf ' + destination_dir_full_path.replace("\\", "/"))
-        copy_command = "scp -r " + dir_to_deploy["name"] + " root@" + remote_host + ":" + dir_to_deploy["dest"].replace("\\", "/")
+    def __init__(self):
+        pass
+
+    def ssh_connect(self, remote_host):
+        self.client = paramiko.SSHClient()
+        self.client.load_system_host_keys()
+        self.client.set_missing_host_key_policy(paramiko.client.AutoAddPolicy)
+        self.client.connect(remote_host["address"], 22, remote_host["username"], remote_host["password"])
+
+    def ssh_close_and_reboot(self):
+        self.client.exec_command('reboot')
+        self.client.close()
+
+    def replace_files(self, remote_host, dir_to_deploy):
+        destination_dir_full_path = os.path.join(dir_to_deploy["value"]["dest"], dir_to_deploy["value"]["name"])
+        self.client.exec_command('rm -rf ' + destination_dir_full_path.replace("\\", "/"))
+        copy_command = "scp -r " + dir_to_deploy["value"]["name"] + " root@" + remote_host["address"] + ":" + \
+                       dir_to_deploy["value"]["dest"].replace("\\", "/")
         os.system(copy_command)
 
-    client.exec_command('reboot')
-    client.close()
+    def deploy(self, remote_hosts_list, dirs_to_deploy_list):
+        for remote_host in remote_hosts_list:
+            self.ssh_connect(remote_host)
+
+            for dir_to_deploy in dirs_to_deploy_list:
+                self.replace_files(remote_host, dir_to_deploy)
+
+            self.ssh_close_and_reboot()
+
+
+if __name__ == "__main__":
+    deployment = Deployment()
+    deployment.deploy(__REMOTE_HOSTS_LIST__, __DIRS_TO_DEPLOY_LIST__)
