@@ -2,6 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Players" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/plugin.video.fullmatchtv" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/plugin.video.seren" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/service.autosubs" vcs="Git" />
