@@ -1,8 +1,8 @@
 import os
 
-__DIRS_TO_DEPLOY_LIST__ = [{"id": "seren",       "value": {"name": os.path.join("..", "plugin.video.seren"),         "dest": os.path.join(".kodi", "addons")}},
-                           {"id": "fullmatchtv", "value": {"name": os.path.join("..", "plugin.video.fullmatchtv"),   "dest": os.path.join(".kodi", "addons")}},
-                           {"id": "autosubs",    "value": {"name": os.path.join("..", "service.autosubs"),           "dest": os.path.join(".kodi", "addons")}},
-                           {"id": "subloader",   "value": {"name": os.path.join("..", "service.subloader"),          "dest": os.path.join(".kodi", "addons")}},
-                           {"id": "openplayers", "value": {"name": os.path.join("..", "Players"),                    "dest": os.path.join(".kodi", "userdata", "addon_data", "plugin.video.openmeta", "Players")}}
+__DIRS_TO_DEPLOY_LIST__ = [{"id": "seren",       "value": {"name": "plugin.video.seren",         "dest": os.path.join(".kodi", "addons")}},
+                           {"id": "fullmatchtv", "value": {"name": "plugin.video.fullmatchtv",   "dest": os.path.join(".kodi", "addons")}},
+                           {"id": "autosubs",    "value": {"name": "service.autosubs",           "dest": os.path.join(".kodi", "addons")}},
+                           {"id": "subloader",   "value": {"name": "service.subloader",          "dest": os.path.join(".kodi", "addons")}},
+                           {"id": "openplayers", "value": {"name": "Players",                    "dest": os.path.join(".kodi", "userdata", "addon_data", "plugin.video.openmeta", "Players")}}
                            ]

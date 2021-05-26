@@ -22,11 +22,14 @@ class Deployment:
 
     def replace_files(self, remote_host, dir_to_deploy):
         destination_dir_full_path = os.path.join(dir_to_deploy["value"]["dest"], dir_to_deploy["value"]["name"])
-        self.client.exec_command('rm -rf ' + destination_dir_full_path.replace("\\", "/"))
-        copy_command = "scp -r " + dir_to_deploy["value"]["name"] + " root@" + remote_host["address"] + ":" + \
-                       dir_to_deploy["value"]["dest"].replace("\\", "/")
+        remove_command = "rm -rf " + destination_dir_full_path.replace("\\", "/")
+        print(remote_host["id"] + ": " + remove_command)
+        self.client.exec_command(remove_command)
+        copy_command = "scp -r " + os.path.join("..", dir_to_deploy["value"]["name"]) + " root@" + \
+                       remote_host["address"] + ":" + dir_to_deploy["value"]["dest"].replace("\\", "/")
+        print(remote_host["id"] + ": " + copy_command)
         os.system(copy_command)
-        print(dir_to_deploy["value"]["name"] + " -> " + remote_host["id"])
+        print(dir_to_deploy["value"]["name"] + " -> " + remote_host["id"] + " : FINISHED")
 
     def deploy(self, remote_hosts_list, dirs_to_deploy_list):
         for remote_host in remote_hosts_list:
