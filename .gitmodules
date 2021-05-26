@@ -25,3 +25,7 @@
 	path = plugin.video.fanfilm
 	url = C:/Users/pk/PycharmProjects/vonsagar_kodi/plugin.video.fanfilm
 	branch = master
+[submodule "repository.vonsagar"]
+	path = repository.vonsagar
+	url = C:/Users/pk/PycharmProjects/vonsagar_kodi/repository.vonsagar
+	branch = master
