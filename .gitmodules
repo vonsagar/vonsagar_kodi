@@ -21,3 +21,7 @@
 	path = service.subloader
 	url = C:/Users/pk/PycharmProjects/vonsagar_kodi/service.subloader
 	branch = master
+[submodule "plugin.video.fanfilm"]
+	path = plugin.video.fanfilm
+	url = C:/Users/pk/PycharmProjects/vonsagar_kodi/plugin.video.fanfilm
+	branch = master
