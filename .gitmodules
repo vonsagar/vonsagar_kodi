@@ -29,3 +29,7 @@
 	path = repository.vonsagar
 	url = C:/Users/pk/PycharmProjects/vonsagar_kodi/repository.vonsagar
 	branch = master
+[submodule "C:/Users/pk/PycharmProjects/vonsagar_kodi/CoreELEC"]
+	path = C:/Users/pk/PycharmProjects/vonsagar_kodi/CoreELEC
+	url = C:/Users/pk/PycharmProjects/vonsagar_kodi/CoreELEC
+	branch = coreelec-19
