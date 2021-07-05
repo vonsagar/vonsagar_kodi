@@ -13,10 +13,6 @@
 	path = service.autosubs
 	url = C:/Users/pk/PycharmProjects/vonsagar_kodi/service.autosubs
 	branch = Frodo
-[submodule "xbmc"]
-	path = xbmc
-	url = C:/Users/pk/PycharmProjects/vonsagar_kodi/xbmc
-	branch = master
 [submodule "service.subloader"]
 	path = service.subloader
 	url = C:/Users/pk/PycharmProjects/vonsagar_kodi/service.subloader
@@ -33,3 +29,7 @@
 	path = C:/Users/pk/PycharmProjects/vonsagar_kodi/CoreELEC
 	url = C:/Users/pk/PycharmProjects/vonsagar_kodi/CoreELEC
 	branch = coreelec-19
+[submodule "C:/Users/pk/PycharmProjects/vonsagar_kodi/kodi"]
+	path = C:/Users/pk/PycharmProjects/vonsagar_kodi/kodi
+	url = C:/Users/pk/PycharmProjects/vonsagar_kodi/kodi
+	branch = Leia
