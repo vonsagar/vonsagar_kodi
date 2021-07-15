@@ -30,3 +30,7 @@
 	path = C:/Users/pk/PycharmProjects/vonsagar_kodi/kodi
 	url = C:/Users/pk/PycharmProjects/vonsagar_kodi/kodi
 	branch = Leia
+[submodule "plugin.video.cdapl"]
+	path = plugin.video.cdapl
+	url = git@github.com:vonsagar/plugin.video.cdapl.git
+	branch = master
