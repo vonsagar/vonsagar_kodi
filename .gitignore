@@ -1,3 +1,5 @@
 *.pyc
-.idea
-kodi-build
+.idea/**
+kodi-build/**
+venv/**
+deployment/.idea/**
