@@ -1,36 +1,36 @@
 [submodule "plugin.video.fullmatchtv"]
 	path = plugin.video.fullmatchtv
-	url = C:/Users/pk/PycharmProjects/vonsagar_kodi/plugin.video.fullmatchtv
+	url = git@github.com:vonsagar/plugin.video.fullmatchtv
 	branch = master
 [submodule "plugin.video.seren"]
 	path = plugin.video.seren
-	url = C:/Users/pk/PycharmProjects/vonsagar_kodi/plugin.video.seren
+	url = git@github.com:vonsagar/plugin.video.seren
 	branch = master
 [submodule "service.autosubs"]
 	path = service.autosubs
-	url = C:/Users/pk/PycharmProjects/vonsagar_kodi/service.autosubs
+	url = git@github.com:vonsagar/service.autosubs
 	branch = Frodo
 [submodule "service.subloader"]
 	path = service.subloader
-	url = C:/Users/pk/PycharmProjects/vonsagar_kodi/service.subloader
+	url = git@github.com:vonsagar/service.subloader
 	branch = master
 [submodule "plugin.video.fanfilm"]
 	path = plugin.video.fanfilm
-	url = C:/Users/pk/PycharmProjects/vonsagar_kodi/plugin.video.fanfilm
+	url = git@github.com:vonsagar/plugin.video.fanfilm
 	branch = master
 [submodule "repository.vonsagar"]
 	path = repository.vonsagar
-	url = C:/Users/pk/PycharmProjects/vonsagar_kodi/repository.vonsagar
+	url = git@github.com:vonsagar/repository.vonsagar
 	branch = master
-[submodule "C:/Users/pk/PycharmProjects/vonsagar_kodi/CoreELEC"]
-	path = C:/Users/pk/PycharmProjects/vonsagar_kodi/CoreELEC
-	url = C:/Users/pk/PycharmProjects/vonsagar_kodi/CoreELEC
+[submodule "CoreELEC"]
+	path = CoreELEC
+	url = git@github.com:vonsagar/CoreELEC
 	branch = coreelec-19
-[submodule "C:/Users/pk/PycharmProjects/vonsagar_kodi/kodi"]
-	path = C:/Users/pk/PycharmProjects/vonsagar_kodi/kodi
-	url = C:/Users/pk/PycharmProjects/vonsagar_kodi/kodi
+[submodule "kodi"]
+	path = kodi
+	url = git@github.com:vonsagar/xbmc
 	branch = Leia
 [submodule "plugin.video.cdapl"]
 	path = plugin.video.cdapl
-	url = git@github.com:vonsagar/plugin.video.cdapl.git
+	url = git@github.com:vonsagar/plugin.video.cdapl
 	branch = master
