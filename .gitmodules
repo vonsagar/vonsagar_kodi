@@ -26,11 +26,11 @@
 	path = CoreELEC
 	url = git@github.com:vonsagar/CoreELEC
 	branch = coreelec-19
-[submodule "kodi"]
-	path = kodi
-	url = git@github.com:vonsagar/xbmc
-	branch = Leia
 [submodule "plugin.video.cdapl"]
 	path = plugin.video.cdapl
 	url = git@github.com:vonsagar/plugin.video.cdapl
 	branch = master
+[submodule "xbmc"]
+	path = xbmc
+	url = git@github.com:vonsagar/xbmc.git
+	branch = Leia
